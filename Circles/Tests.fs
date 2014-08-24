@@ -31,7 +31,7 @@ type ``when generating 2000 points on a circle of radius 100`` () =
         
 
 [<TestFixture>]
-type ``finding the distance between 2 points on a circle of radius 10`` () =
+type ``when finding the distance between 2 points on a circle of radius 10`` () =
     let points = Circles.points 2 10
     let intervals = Circles.intervals points
     
@@ -45,7 +45,7 @@ type ``finding the distance between 2 points on a circle of radius 10`` () =
 
 
 [<TestFixture>]
-type ``finding the distance between 4 points on a circle of radius 10`` () =
+type ``when finding the distance between 4 points on a circle of radius 10`` () =
     let points = Circles.points 4 10
     let intervals = Circles.intervals points
     

@@ -29,6 +29,7 @@ type ``when generating 2000 points on a circle of radius 100`` () =
     member t.``there are 2000 points`` ()=
         List.length points |> should equal 2000
         
+
 [<TestFixture>]
 type ``finding the distance between 2 points on a circle of radius 10`` () =
     let points = Circles.points 2 10
@@ -56,6 +57,7 @@ type ``finding the distance between 4 points on a circle of radius 10`` () =
     member t.``all intervals should be 20`` ()=
         List.forall (fun i -> i = sqrt 200.0) intervals |> should equal true
 
+
 [<TestFixture>]
 type ``when suming the intervals between points 4 points on a circle of radius 10`` ()=
     let points = Circles.points 4 10
@@ -63,6 +65,7 @@ type ``when suming the intervals between points 4 points on a circle of radius 1
     [<Test>]
     member t.``the sum should be sqrt 200 * 4`` ()=
         Circles.intervalDistance points |> should equal (sqrt 200.0 |> (*) 4.0)
+
 
 [<TestFixture>]
 type ``when calculating the ration between the sum of intervals and diameter of a circle`` ()=

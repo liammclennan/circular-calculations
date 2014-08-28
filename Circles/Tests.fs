@@ -68,7 +68,7 @@ type ``when suming the intervals between points 4 points on a circle of radius 1
 
 
 [<TestFixture>]
-type ``when calculating the ration between the sum of intervals and diameter of a circle`` ()=
+type ``when calculating the ratio between the sum of intervals and diameter of a circle`` ()=
     let setsOfPoints = List.map (fun n -> Circles.points n 100000000) [10;20;30;50;70;100;150;200;2000;20000]
     let ratios = List.map (Circles.ratio 100000000.0) setsOfPoints
 

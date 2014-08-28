@@ -54,7 +54,7 @@ type ``when finding the distance between 4 points on a circle of radius 10`` () 
         List.length intervals |> should equal 4
        
     [<Test>]
-    member t.``all intervals should be 20`` ()=
+    member t.``all intervals should be sqrt(200)`` ()=
         List.forall (fun i -> i = sqrt 200.0) intervals |> should equal true
 
 
